@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqua Hotel & Restaurant | Order Online</title>
+<meta name="description" content="Order nyama choma, pilau and Kenyan favourites from Aqua Hotel & Restaurant, Sebit. Delivery and collection available.">
+<style>
+:root{--green:#0b5b43;--gold:#e7b34b;--ink:#17231e;--cream:#fffaf0;--muted:#66736c}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f7f2;color:var(--ink)}
+header{background:linear-gradient(120deg,#073d2e,#0b5b43);color:white;padding:22px 5%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.brand{font-size:1.35rem;font-weight:800;letter-spacing:.2px}.brand span{color:var(--gold)}header small{display:block;margin-top:5px;color:#d8e7df}
+nav a{color:white;text-decoration:none;margin-left:16px;font-weight:700;font-size:.92rem}
+.hero{padding:56px 5%;background:linear-gradient(90deg,rgba(4,40,29,.92),rgba(4,40,29,.45)),url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;min-height:330px;display:flex;align-items:center}
+.hero div{max-width:680px}.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
+h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.04;margin:12px 0}.hero p{font-size:1.1rem;line-height:1.6;max-width:560px}
+.btn{display:inline-block;background:var(--gold);color:#17231e;border:0;border-radius:9px;padding:12px 17px;font-weight:800;text-decoration:none;cursor:pointer}
+main{max-width:1180px;margin:auto;padding:30px 5% 55px}.section-title{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap;margin:8px 0 20px}.section-title h2{margin:0;font-size:1.8rem}.section-title p{margin:7px 0 0;color:var(--muted)}
+.layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr);gap:25px;align-items:start}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:15px}
+.item{background:white;border:1px solid #e6e9e3;border-radius:15px;overflow:hidden;box-shadow:0 4px 14px #173b2810}
+.food-photo{height:125px;background:#e8eee8;display:flex;align-items:center;justify-content:center;font-size:3rem}
+.item-body{padding:14px}.item h3{margin:0 0 7px;font-size:1.05rem}.item p{font-size:.88rem;line-height:1.4;color:var(--muted);min-height:35px;margin:0 0 12px}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:8px}.price{font-weight:800;color:var(--green)}
+.add{background:var(--green);color:white;border:0;border-radius:8px;padding:8px 11px;font-weight:800;cursor:pointer}
+.cart{background:white;border:1px solid #e2e7e0;border-radius:15px;padding:19px;position:sticky;top:12px}.cart h2{margin:0 0 12px}.empty{color:var(--muted);padding:12px 0}.cart-line{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #edf0ea}.cart-line small{display:block;color:var(--muted);margin-top:4px}.qty{display:flex;align-items:center;gap:7px}.qty button{border:1px solid #ccd6ce;background:#f6f8f5;border-radius:5px;padding:3px 8px;cursor:pointer}.total{display:flex;justify-content:space-between;font-size:1.15rem;font-weight:800;padding:15px 0}
+form{display:grid;gap:10px;margin-top:12px}label{font-size:.85rem;font-weight:700}input,select,textarea{width:100%;padding:11px;border:1px solid #ccd5ce;border-radius:8px;font:inherit;background:white}textarea{min-height:68px;resize:vertical}.field{display:grid;gap:5px}.wide{width:100%}.notice{background:#fff6df;border:1px solid #f1d99a;border-radius:10px;padding:12px;font-size:.87rem;line-height:1.5;margin:12px 0}.status{font-size:.85rem;color:var(--muted);line-height:1.5}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.info{padding:18px;border-radius:12px;background:#eaf1eb}.info strong{display:block;margin-bottom:7px}.info p{margin:0;color:#52645a;line-height:1.5;font-size:.92rem}
+footer{background:#102a21;color:#e8f1eb;padding:28px 5%;text-align:center;line-height:1.7}footer a{color:var(--gold)}
+@media(max-width:780px){.layout{grid-template-columns:1fr}.cart{position:static}.info-grid{grid-template-columns:1fr}nav a{margin-left:0;margin-right:12px}.hero{padding-top:42px;padding-bottom:42px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">AQUA <span>HOTEL & RESTAURANT</span><small>Good food. Easy ordering. Sebit.</small></div>
+  <nav><a href="#menu">Menu</a><a href="#order">Order</a><a href="#contact">Contact</a></nav>
+</header>
+<section class="hero">
+  <div><div class="eyebrow">Welcome to Aqua</div><h1>Your Kenyan favourites,<br>where you need them.</h1>
+  <p>Enjoy nyama choma, pilau and more. Order ahead for collection or request delivery around CEMTECH, Sebit. Pay before food preparation.</p>
+  <a class="btn" href="#menu">Explore the menu ↓</a></div>
+</section>
+<main>
+  <div class="section-title" id="menu"><div><h2>Our menu</h2><p>Sample prices in KSh — update these to match your actual menu.</p></div></div>
+  <div class="layout">
+    <section><div class="menu-grid" id="menuGrid"></div></section>
+    <aside class="cart" id="order">
+      <h2>Your order <span id="cartCount" style="color:var(--green)">(0)</span></h2>
+      <div id="cartItems" class="empty">Your cart is empty. Add a meal to get started.</div>
+      <div class="total"><span>Total</span><span id="total">KSh 0</span></div>
+      <div class="notice"><strong>M-Pesa payment:</strong> Pay to <strong>0702120007</strong>. This starter website cannot automatically verify payment. Do not start food preparation until you have confirmed the payment in your M-Pesa account.</div>
+      <form id="orderForm">
+        <div class="field"><label for="customer">Your name *</label><input id="customer" required placeholder="Name for the order"></div>
+        <div class="field"><label for="phone">Phone number *</label><input id="phone" type="tel" required placeholder="e.g. 07XX XXX XXX"></div>
+        <div class="field"><label for="truck">Truck registration (optional)</label><input id="truck" placeholder="e.g. KXX 123X"></div>
+        <div class="field"><label for="fulfilment">How would you like your food? *</label><select id="fulfilment" required><option value="Delivery">Delivery</option><option value="Hotel collection">Collect at the hotel</option></select></div>
+        <div class="field"><label for="location">Delivery location / meeting point *</label><input id="location" required placeholder="e.g. CEMTECH gate, Sebit"></div>
+        <div class="field"><label for="time">Preferred delivery/collection time</label><input id="time" type="text" placeholder="e.g. 1:30 pm"></div>
+        <div class="field"><label for="notes">Special instructions</label><textarea id="notes" placeholder="Spice level, portion notes, directions..."></textarea></div>
+        <button class="btn wide" type="submit">Continue order on WhatsApp</button>
+        <p class="status">Your order details will be prepared in WhatsApp for you to send to Aqua. The order is not received until you send the message, and payment must be checked separately.</p>
+      </form>
+    </aside>
+  </div>
+  <section class="info-grid">
+    <div class="info"><strong>🚚 Delivery around Sebit</strong><p>Give a clear meeting point so your food can reach you with less delay.</p></div>
+    <div class="info"><strong>📲 Order ahead</strong><p>Truck drivers can place an order before arriving and share their expected time.</p></div>
+    <div class="info"><strong>💳 M-Pesa</strong><p>Pay before preparation. Keep your M-Pesa confirmation message for your records.</p></div>
+  </section>
+</main>
+<footer id="contact"><strong>Aqua Hotel and Restaurant</strong><br>Sebit, West Pokot, Kenya<br>Phone / WhatsApp: <a href="https://wa.me/254702120007">0702120007</a><br><small>Online ordering starter website. Menu prices, delivery coverage and payment integration should be confirmed before launch.</small></footer>
+<script>
+const WHATSAPP = "254702120007";
+const products = [
+ {id:"nyama",name:"Nyama Choma",desc:"Grilled meat; choose your preferred portion.",price:500,emoji:"🍖"},
+ {id:"pilau",name:"Pilau",desc:"Fragrant Kenyan spiced rice.",price:250,emoji:"🍛"},
+ {id:"chicken",name:"Chicken & Chips",desc:"A filling classic meal.",price:450,emoji:"🍗"},
+ {id:"ugali",name:"Ugali & Sukuma Wiki",desc:"A Kenyan everyday favourite.",price:180,emoji:"🥬"},
+ {id:"beef",name:"Beef Stew & Ugali",desc:"Hearty stew served with ugali.",price:300,emoji:"🍲"},
+ {id:"chapati",name:"Beans & Chapati",desc:"Beans served with soft chapati.",price:200,emoji:"🫓"},
+ {id:"chips",name:"Chips",desc:"Crispy chips, freshly prepared.",price:180,emoji:"🍟"},
+ {id:"soda",name:"Soda / Soft Drink",desc:"A cold drink to go with your meal.",price:80,emoji:"🥤"},
+ {id:"tea",name:"Tea",desc:"Kenyan tea.",price:50,emoji:"☕"},
+ {id:"water",name:"Bottled Water",desc:"Drinking water.",price:60,emoji:"💧"}
+];
+const cart = {};
+const money = n => "KSh " + n.toLocaleString("en-KE");
+function renderMenu(){
+ document.getElementById("menuGrid").innerHTML=products.map(p=>`<article class="item"><div class="food-photo">${p.emoji}</div><div class="item-body"><h3>${p.name}</h3><p>${p.desc}</p><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" onclick="addItem('${p.id}')">+ Add</button></div></div></article>`).join("");
+}
+function addItem(id){cart[id]=(cart[id]||0)+1;renderCart()}
+function changeQty(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];renderCart()}
+function renderCart(){
+ const entries=products.filter(p=>cart[p.id]);
+ const count=entries.reduce((s,p)=>s+cart[p.id],0);
+ const total=entries.reduce((s,p)=>s+p.price*cart[p.id],0);
+ document.getElementById("cartCount").textContent=`(${count})`;
+ document.getElementById("total").textContent=money(total);
+ document.getElementById("cartItems").innerHTML=entries.length?entries.map(p=>`<div class="cart-line"><div><strong>${p.name}</strong><small>${money(p.price)} each</small></div><div class="qty"><button type="button" aria-label="Decrease ${p.name}" onclick="changeQty('${p.id}',-1)">−</button><strong>${cart[p.id]}</strong><button type="button" aria-label="Increase ${p.name}" onclick="changeQty('${p.id}',1)">+</button></div></div>`).join(""):'<div class="empty">Your cart is empty. Add a meal to get started.</div>';
+}
+document.getElementById("orderForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const entries=products.filter(p=>cart[p.id]);
+ if(!entries.length){alert("Please add at least one meal to your cart.");return}
+ const total=entries.reduce((s,p)=>s+p.price*cart[p.id],0);
+ const lines=entries.map(p=>`• ${p.name} x${cart[p.id]} — ${money(p.price*cart[p.id])}`).join("\n");
+ const customer=document.getElementById("customer").value.trim();
+ const phone=document.getElementById("phone").value.trim();
+ const truck=document.getElementById("truck").value.trim()||"Not provided";
+ const fulfilment=document.getElementById("fulfilment").value;
+ const location=document.getElementById("location").value.trim();
+ const time=document.getElementById("time").value.trim()||"Not specified";
+ const notes=document.getElementById("notes").value.trim()||"None";
+ const message=`AQUA HOTEL & RESTAURANT — NEW ORDER\n\nCustomer: ${customer}\nPhone: ${phone}\nTruck registration: ${truck}\nOrder type: ${fulfilment}\nLocation/meeting point: ${location}\nPreferred time: ${time}\n\nORDER:\n${lines}\n\nTOTAL: ${money(total)}\nM-Pesa payment: customer to pay 0702120007; payment must be verified by Aqua before preparation.\nSpecial instructions: ${notes}\n\nPlease confirm availability and payment instructions.`;
+ window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`,"_blank","noopener");
+});
+renderMenu();renderCart();
+</script>
+</body>
+</html>
